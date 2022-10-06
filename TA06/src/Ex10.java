@@ -15,18 +15,18 @@ public class Ex10 {
 		System.out.println("Introduce la longitud del array:");
 		String arrayLength = sc.nextLine();
 		
-		array = new int[Integer.parseInt(arrayLength)];
+		array = new int[Integer.parseInt(arrayLength)]; //crear array con la longitud indicada
 		
-		for (int i = 0; i < array.length; i++) {
+		for (int i = 0; i < array.length; i++) { //loop de 0 a la longitud indicada
 			
-			while (prime == false) {
+			while (prime == false) { //mientras no sea primo, sigo buscando un número primo
 				
-				number = randomNumber(1, 1000);
-				prime = isPrime(number);
+				number = randomNumber(1, 1000); //crea un valor aleatorio entre 1 i 1000
+				prime = isPrime(number); //comprueba si es un numero primo y devuelve true o false
 				
 			}
 			
-			array[i] = number;
+			array[i] = number; //añade el número primo al array
 			prime = false;
 			
 		}
@@ -52,7 +52,7 @@ public class Ex10 {
 		boolean prime = true;
 		
 		for (int i = 2; i < number; i++) {
-			if (number % i == 0) {
+			if (number % i == 0) { //si el número es divisible entre otro, no es primo
 				prime = false;
 				break;
 			}

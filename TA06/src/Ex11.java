@@ -16,19 +16,19 @@ public class Ex11 {
 		System.out.println("Introduce la longitud de los array:");
 		String arrayLength = sc.nextLine();
 		
-		array1 = new int[Integer.parseInt(arrayLength)];
+		array1 = new int[Integer.parseInt(arrayLength)]; //crear array con la longitud indicada
 		array2 = new int[Integer.parseInt(arrayLength)];
 		
 		for (int i = 0; i < array1.length; i++) {
 			
-			array1[i] = randomNumber(0, 9);
-			array2 = Arrays.copyOf(array1, array1.length);
+			array1[i] = randomNumber(0, 9); //randomizamos el array1
+			array2 = Arrays.copyOf(array1, array1.length); //copiamos el array1 al array2
 			
 		}
 		
 		for (int i = 0; i < array2.length; i++) {
 			
-			array2[i] = randomNumber(0, 9);
+			array2[i] = randomNumber(0, 9); //volvemos a randomizar el array2
 			
 		}
 		
@@ -48,11 +48,11 @@ public class Ex11 {
 	
 	public static int[] multiplyArray(int array1[], int array2[]) {
 		
-		int multiplied[] = Arrays.copyOf(array2, array2.length);
+		int multiplied[] = Arrays.copyOf(array2, array2.length); //copiamos el array2 al array multiplicado
 		
 		for (int i = 0; i < array1.length; i++) {
 			
-			multiplied[i] = array1[i] * array2[i];
+			multiplied[i] = array1[i] * array2[i]; //multiplicamos los 2 array y lo guardamos en el array multiplicado
 			
 		}
 		

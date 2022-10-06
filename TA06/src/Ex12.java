@@ -17,7 +17,7 @@ public class Ex12 {
 		System.out.println("Introduce la longitud del array:");
 		String arrayLength = sc.nextLine();
 		
-		array = new int[Integer.parseInt(arrayLength)];
+		array = new int[Integer.parseInt(arrayLength)]; //crear array con la longitud indicada
 		lastDigitArray = new int[Integer.parseInt(arrayLength)];
 		savedArray = new int[Integer.parseInt(arrayLength)];
 		
@@ -38,7 +38,7 @@ public class Ex12 {
 		
 		for (int i = 0; i < array.length; i++) {
 			
-			if (array[i]%10 == Integer.parseInt(lastDigit)) {
+			if (array[i]%10 == Integer.parseInt(lastDigit)) { //si el primer decimal de la division es igual al numero nos guardará ese número en un array
 				
 				savedArray[j] = array[i];
 				j++;
@@ -47,7 +47,7 @@ public class Ex12 {
 			
 		}
 		
-		trueSavedArray = Arrays.copyOf(savedArray, j);
+		trueSavedArray = Arrays.copyOf(savedArray, j); //copiamos el array de números coincidentes pero con la longitud adecuada
 		
 		System.out.println("Números coincidentes: ");
 		

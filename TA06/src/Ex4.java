@@ -19,7 +19,7 @@ public class Ex4 {
 		
 		int result = number;
 		
-		for (int i = number-1; i > 0; i--) {
+		for (int i = number-1; i > 0; i--) { //Ejemplo factorial de 5: 5 * 4 * 3 * 2 * 1
 			result = result * i;
 		}
 		
